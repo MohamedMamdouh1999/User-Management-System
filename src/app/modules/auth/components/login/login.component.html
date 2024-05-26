@@ -1,1 +1,22 @@
-<p>login works!</p>
+<section class="vh-100 d-flex align-items-center justify-content-center">
+     <div class="container">
+          <form #form="ngForm" (ngSubmit)="onLogin(form)" class="mx-auto bg-white">
+               <div class="text-center">
+                    <h1>User Management System</h1>
+                    <h2>Sign In</h2>
+                    <p>Enter your credentials to access your account</p>
+               </div>
+               <div class="form-group">
+                    <label for="username">Username</label>
+                    <input required ngModel #username="ngModel" type="username" id="username" name="username" class="form-control shadow-none" placeholder="Enter your username">
+                    <small *ngIf="username.errors?.['required'] && username.touched" class="text-danger">! Username is required</small>
+               </div>
+               <div class="form-group">
+                    <label for="password">Password</label>
+                    <input required ngModel #password="ngModel" type="password" id="password" name="password" class="form-control shadow-none mb-0" placeholder="Enter your password">
+                    <small *ngIf="password.errors?.['required'] && password.touched" class="text-danger">! Password is required</small>
+               </div>
+               <button type="submit" class="btn rounded-1 shadow-none text-white w-100">SIGN IN</button>
+          </form>
+     </div>
+</section>
