@@ -1,0 +1,21 @@
+header {
+     padding-block: 12px;
+     .form-group {
+          margin-right: 27px;
+          input {
+               width: 212px;
+               height: 37px;
+               outline: none;
+               font-size: 14px;
+               padding: 10px 14px;
+               border-radius: 8px;
+               border: 1px solid #E5E5E5;
+          }
+          img {
+               right: 12px;
+          }
+     }
+}
+::placeholder {
+     color: #C4C4C4;
+}

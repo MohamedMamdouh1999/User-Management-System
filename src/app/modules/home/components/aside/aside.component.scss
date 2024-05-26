@@ -1,0 +1,55 @@
+aside {
+     padding: 18px 38px 30px;
+     background-color: #F2EAE1;
+     h6 {
+          font-size: 18px;
+          font-weight: 700;
+          padding-left: 10px;
+          border-left: 4px solid #F8D442;
+     }
+     div {
+          img {
+               width: 128px;
+               height: 128px;
+          }
+          h3 {
+               font-size: 17px;
+               font-weight: 700;
+               margin-top: 20px;
+               margin-bottom: 10px;
+          }
+          p {
+               font-size: 14px;
+               font-weight: 500;
+               color: #FEAF00;
+          }
+     }
+     ul li {
+          a {
+               width: 193px;
+               height: 41px;
+               border-radius: 4px;
+               transition: background-color 150ms ease-in-out;
+               img {
+                    margin-left: 44px;
+                    margin-right: 19px;
+               }
+               span {
+                    font-size: 14px;
+                    font-weight: 500;
+               }
+               &:hover,
+               &.active {
+                    background-color: #FEAF00;
+               }
+          }
+          &:not(:first-of-type) {
+               margin-top: 10px;
+          }
+     }
+     button span {
+          font-size: 14px;
+          font-weight: 500;
+          margin-right: 23px;
+     }
+}

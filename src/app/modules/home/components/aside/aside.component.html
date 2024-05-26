@@ -1,0 +1,38 @@
+<aside class="vh-100 position-fixed top-0 bottom-0 d-flex flex-column align-items-center justify-content-between">
+     <h6 class="align-self-start mb-0">UMS</h6>
+     <div class="text-center">
+          <img class="rounded-circle" loading="lazy" [src]="user.image" [alt]="user.username">
+          <h3>{{user.firstName}} {{user.lastName}}</h3>
+          <p class="mb-0">Admin</p>
+     </div>
+     <ul>
+          <li>
+               <a class="d-flex align-items-center" routerLink="/home">
+                    <img loading="lazy" src="assets/icons/home.svg" alt="User Management System">
+                    <span>Home</span>
+               </a>
+          </li>
+          <li>
+               <a class="d-flex align-items-center" routerLink="/home" routerLinkActive="active">
+                    <img loading="lazy" src="assets/icons/bookmark.svg" alt="User Management System">
+                    <span>Users</span>
+               </a>
+          </li>
+          <li>
+               <a class="d-flex align-items-center" routerLink="/users" routerLinkActive="active">
+                    <img loading="lazy" src="assets/icons/cap.svg" alt="User Management System">
+                    <span>Add User</span>
+               </a>
+          </li>
+          <li>
+               <a class="d-flex align-items-center" routerLink="/profile" routerLinkActive="active">
+                    <img loading="lazy" src="assets/icons/usd.svg" alt="User Management System">
+                    <span>Profile</span>
+               </a>
+          </li>
+     </ul>
+     <button (click)="signOut()" class="btn shadow-none border-0 rounded-0 mx-auto d-flex align-items-center justify-content-center">
+          <span>Logout</span>
+          <img loading="lazy" src="assets/icons/sign-out.svg" alt="User Management System">
+     </button>
+</aside>
